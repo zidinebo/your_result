@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* PRIMARY */
+  --Lightred: hsl(0, 100%, 67%);
+
+  --Orangeyellow: hsl(39, 100%, 56%);
+
+  --Greenteal: hsl(166, 100%, 37%);
+
+  --Cobaltblue: hsl(234, 85%, 45%);
+
+  /* GRADIENTS */
+  /* BACKGROUND */
+  --Lightslateblue: hsl(252, 100%, 67%);
+  --Lightroyalblue: hsl(241, 81%, 54%);
+  /* CIRCLE */
+  --Violetblue: hsla(256, 72%, 46%, 1);
+  --Persianblue: hsla(241, 72%, 46%, 0);
+
+  /* NEUTRAL */
+  --White: hsl(0, 0%, 100%);
+  --Paleblue: hsl(221, 100%, 96%);
+  --Lightlavender: hsl(241, 100%, 89%);
+  --Darkgrayblue: hsl(224, 30%, 27%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.maincon {
+  max-width: 600px;
+  display: flex;
+  /* Because it is in display flex, margin auto wont work in bringing it to tht center. So you use justify content ceneter */
+  justify-content: center;
+  margin-top: 150px;
+  color: var(--White);
+  margin-bottom: 150px;
+  box-shadow: 10px 10px 5px hsla(221, 100%, 96%, 0.5);
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+/* media query from screen 500px t0 0px */
+@media (max-width: 500px) {
+  .maincon {
+    flex-direction: column;
+    border-radius: 0;
+    margin: 0;
+  }
+}
+
+.card1 {
+  /* border: 3px solid yellow; */
+  max-width: 300px;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  border-radius: 30px;
+}
+
+@media (max-width: 500px) {
+  .card1 {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+.yaw {
+  font-size: 22px;
+  font-weight: 500;
+  color: var();
+}
+
+.circle {
+  background: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  width: 200px;
+  height: 200px;
+  margin: 30px auto;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.seven6 {
+  font-size: 70px;
+  font-weight: 800;
+}
+
+.card1 h2 {
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.yawn {
+  font-size: 18px;
+  font-weight: 500;
+  /* padding left and right is done  */
+  padding: 0 14px;
+  line-height: 25px;
+}
+/* ======================== */
+.card2 {
+  /* border: 3px solid green; */
+  max-width: 300px;
+  padding: 25px 20px;
+  border-radius: 30px;
+}
+
+.card2 h3 {
+  color: var(--Darkgrayblue);
+}
+
+.results {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.red {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.react {
+  display: flex;
+  gap: 15px;
+}
+
+.react p {
+  color: var(--Lightred);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.memo p {
+  font-size: 18px;
+  color: hsla(224, 30%, 27%, 0.5);
+  font-weight: 700;
+}
+
+.memo p span {
+  color: var(--Darkgrayblue);
+}
+
+/* ======== */
+.yellow {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.memory {
+  display: flex;
+  gap: 15px;
+}
+
+.memory p {
+  color: var(--Orangeyellow);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.memo p {
+  font-size: 18px;
+  color: hsla(224, 30%, 27%, 0.5);
+  font-weight: 700;
+}
+
+.memo p span {
+  color: var(--Darkgrayblue);
+}
+
+/* ======================= */
+.green {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.verbal {
+  display: flex;
+  gap: 15px;
+}
+
+.verbal p {
+  color: var(--Greenteal);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.memo p {
+  font-size: 18px;
+  color: hsla(224, 30%, 27%, 0.5);
+  font-weight: 700;
+}
+
+.memo p span {
+  color: var(--Darkgrayblue);
+}
+
+/* ================== */
+.blue {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.visual {
+  display: flex;
+  gap: 15px;
+}
+
+.visual p {
+  color: var(--Cobaltblue);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.memo p {
+  font-size: 18px;
+  color: hsla(224, 30%, 27%, 0.5);
+  font-weight: 700;
+}
+
+.memo p span {
+  color: var(--Darkgrayblue);
+}
+
+/* =========== */
+.divfive {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.divfive button {
+  padding: 15px 100px;
+  border-radius: 25px;
+  background-color: var(--Darkgrayblue);
+  border: none;
+  color: var(--White);
+  cursor: pointer;
+}
+
+.divfive button:hover {
+  color: var(--White);
+  background: linear-gradient(
+    to bottom,
+    var(--Lightslateblue),
+    var(--Lightroyalblue)
+  );
+}
