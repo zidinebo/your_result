@@ -79,15 +79,10 @@ body {
 .yaw {
   font-size: 22px;
   font-weight: 500;
-  color: var();
 }
 
 .circle {
-  background: linear-gradient(
-    to bottom,
-    hsla(256, 72%, 46%, 1),
-    hsla(241, 72%, 46%, 0)
-  );
+  background: linear-gradient(to bottom, red, hsla(241, 72%, 46%, 0));
   width: 200px;
   height: 200px;
   margin: 30px auto;
@@ -172,8 +167,7 @@ body {
   padding: 15px;
   border-radius: 10px;
 }
-
-.memory {
+okay .memory {
   display: flex;
   gap: 15px;
 }
