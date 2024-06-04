@@ -79,6 +79,7 @@ body {
 .yaw {
   font-size: 22px;
   font-weight: 500;
+  color: var();
 }
 
 .circle {
